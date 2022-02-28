@@ -169,6 +169,7 @@ var jsonConfigDefault = []byte(`
   "request_timeout": 90,
   "CaseSensitiveNames": false,
   "ClientTLSCert": "",
-  "ClientTLSKey": ""
+  "ClientTLSKey": "",
+  "use_username_as_alias": false
 }
 `)
