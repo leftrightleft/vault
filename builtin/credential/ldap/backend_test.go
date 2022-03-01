@@ -1205,7 +1205,7 @@ func TestLdapAuthBackend_ConfigUpgrade(t *testing.T) {
 			CaseSensitiveNames:       falseBool,
 			UsePre111GroupCNBehavior: new(bool),
 			RequestTimeout:           cfg.RequestTimeout,
-			UseUsernameAsAlias:       false,
+			UsernameAsAlias:          false,
 		},
 	}
 
