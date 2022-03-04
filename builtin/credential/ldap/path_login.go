@@ -103,7 +103,7 @@ func (b *backend) pathLogin(ctx context.Context, req *logical.Request, d *framew
 		},
 	}
 
-	if cfg.UsernameAsAlias {
+	if cfg.UsernameAsAlias && cfg.UserFilter == "" {
 		auth.Alias.Name = username
 	}
 
