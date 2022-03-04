@@ -6,7 +6,7 @@ description: The `/sys/managed-keys` endpoint is used manage the managed keys in
 
 # `/sys/managed-keys`
 
-The `/sys/managed-keys` endpoint is used manage the Managed Key configuration within Vault.
+The `/sys/managed-keys` endpoint is used to manage the Managed Key configuration within Vault.
 See the [Managed Keys](/docs/enterprise/managed-keys) section for further details on the Managed Keys system.
 
 ## List managed keys.
@@ -144,7 +144,7 @@ This endpoint returns the managed key configuration at the given path.
 ### Parameters
 - `name` `(string: <required>)` - The lowercase name identifying the key.
 
-- `type` `(string: <required>)` – The backend type for the managed key.
+- `type` `(string: <required>)` – The backend type for the managed key. Supported options are `pkcs11` and `awskms`.
 
 ### Sample Request
 
@@ -193,7 +193,7 @@ status code, the configuration can be considered valid.
 ### Parameters
 - `name` `(string: <required>)` - The lowercase name identifying the key.
 
-- `type` `(string: <required>)` – The backend type for the managed key.
+- `type` `(string: <required>)` – The backend type for the managed key. Supported options are `pkcs11` and `awskms`.
 
 ### Sample Request
 
@@ -217,7 +217,7 @@ listed within any mount point's `allowed_managed_keys`.
 ### Parameters
 - `name` `(string: <required>)` - The lowercase name identifying the key.
 
-- `type` `(string: <required>)` – The backend type for the managed key.
+- `type` `(string: <required>)` – The backend type for the managed key. Supported options are `pkcs11` and `awskms`.
 
 ### Sample Request
 
