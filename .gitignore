@@ -3,6 +3,7 @@
 *.a
 *.so
 
+.venv
 # Folders
 _obj
 _test
