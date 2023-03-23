@@ -1,4 +1,4 @@
-FROM alpine:3.15 as default
+FROM alpine:3.16 as default
 
 ARG BIN_NAME
 # NAME and VERSION are the name of the software in releases.hashicorp.com
